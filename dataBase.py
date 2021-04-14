@@ -25,7 +25,7 @@ def apery(a, b, c, d):
                 if eqClass == val and intList[val] == 0: # if the attainable is in val eq class and is the first one found
                     intList [val] = p # we alter its index in intList and that effectively marks it when revisited by the above line
         p += 1
-    return tuple(sorted(intList))
+    return tuple(sorted(intList)) # not sorting will result in elements being ordered according to equivilent class instead of ascending order
 def isAttainable4(a, b, c, d, val):
     for i in range(int(val/a) + 1):
         for j in range(int(val/b) + 1):
